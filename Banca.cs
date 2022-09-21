@@ -43,4 +43,20 @@ public class Banca
     public List<Cliente> ListaClienti { get; set; }
     public List<Prestito> ListaPrestiti { get; set; }
 
+    public void AddUser(List<Cliente> Clienti)
+    {
+        Console.WriteLine("Inserimento Cliente:");
+        Console.WriteLine("");
+        Cliente c = new Cliente();
+        Console.WriteLine("Inserisci il nome del Codice Fiscale: ");
+        c.CF = Console.ReadLine();
+        Console.WriteLine("Inserisci il nome del cliente: ");
+        c.Nome = Console.ReadLine();
+        Console.WriteLine("Inserisci il cognome del cliente: ");
+        c.Cognome = Console.ReadLine();
+        Console.WriteLine("Inserisci lo stipendio  del cliente: ");
+        c.Stipendio = Convert.ToDouble(Console.ReadLine());
+        Clienti.Add(c);
+        Console.WriteLine("Utente aggiunto!");
+    }
 }
