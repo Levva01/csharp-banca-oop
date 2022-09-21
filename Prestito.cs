@@ -35,18 +35,25 @@ visualizzare per ogni cliente, la situazione dei suoi prestiti in formato tabell
 
 public class Prestito
 {
-    public Prestito(int id, Cliente cliente, int ammontare, DateOnly dataInizio, DateOnly dataFine)
+    public Prestito(int id, Cliente cliente, int ammontare, double rata, DateOnly dataInizio, DateOnly dataFine)
     {
         this.Id = id;
         this.Cliente = cliente;
         this.Ammontare = ammontare;
+        this.Rata = rata;
         this.DataInizio = dataInizio;
         this.DataFine = dataFine;
+    }
+
+    public Prestito()
+    {
+
     }
 
     public int Id { get; set; }
     public Cliente Cliente { get; set; }
     public int Ammontare { get; set; }
+    public double Rata { get; set; }
     public DateOnly DataInizio { get; set; }
     public DateOnly DataFine { get; set; }
 
