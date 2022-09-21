@@ -30,8 +30,17 @@ Bonus:
 visualizzare per ogni cliente, la situazione dei suoi prestiti in formato tabellare.
 
  */
+public class Banca
+{
+    public Banca(string nome, List<Cliente> listaClienti, List<Prestito> listaPrestiti)
+    {
+        this.Nome = nome;
+        this.ListaClienti = listaClienti;
+        this.ListaPrestiti = listaPrestiti;
+    }
 
+    public string Nome { get; set; }
+    public List<Cliente> ListaClienti { get; set; }
+    public List<Prestito> ListaPrestiti { get; set; }
 
-Console.WriteLine("Banca");
-
-
+}

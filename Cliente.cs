@@ -28,10 +28,21 @@ Per i clienti e per i prestiti si vuole stampare un prospetto riassuntivo con tu
 caratterizzano in un formato di tipo stringa a piacere.
 Bonus:
 visualizzare per ogni cliente, la situazione dei suoi prestiti in formato tabellare.
-
+ 
  */
 
+public class Cliente
+{
+    public string CF { get; private set; } //codice fiscale
+    public string Nome { get; private set; }
+    public string Cognome { get; private set; }
+    public double Stipendio { get; private set; }
 
-Console.WriteLine("Banca");
-
-
+    public Cliente(string CF, string nome, string cognome, double stipendio)
+    {
+        this.CF = CF;
+        this.Nome = nome;
+        this.Cognome = cognome;
+        this.Stipendio = stipendio;
+    }
+}

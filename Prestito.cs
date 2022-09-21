@@ -32,6 +32,23 @@ visualizzare per ogni cliente, la situazione dei suoi prestiti in formato tabell
  */
 
 
-Console.WriteLine("Banca");
+
+public class Prestito
+{
+    public Prestito(int id, Cliente cliente, int ammontare, DateOnly dataInizio, DateOnly dataFine)
+    {
+        this.Id = id;
+        this.Cliente = cliente;
+        this.Ammontare = ammontare;
+        this.DataInizio = dataInizio;
+        this.DataFine = dataFine;
+    }
+
+    public int Id { get; set; }
+    public Cliente Cliente { get; set; }
+    public int Ammontare { get; set; }
+    public DateOnly DataInizio { get; set; }
+    public DateOnly DataFine { get; set; }
 
 
+}
